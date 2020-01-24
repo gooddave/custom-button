@@ -1,0 +1,36 @@
+{
+  "name": "@therealgooddave/custom-button",
+  "module": "/dist/custom-button",
+  "description": "My first component.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Dave Goodman",
+    "email": "info@davegoodmanuiuxdesign.com"
+  },
+  "homepage": "https://github.com/gooddave/custom-button#readme",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:gooddave/custom-button.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "docs": "start-storybook -p 9001 -c .storybook",
+    "docs:build": "build-storybook -c .storybook -o docs"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "@storybook/addon-info": "^5.3.7",
+    "@storybook/components": "^5.3.7",
+    "@storybook/react": "^5.3.7",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "react": "^16.12.0",
+    "storybook-addon-jsx": "^7.1.13",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  }
+}
